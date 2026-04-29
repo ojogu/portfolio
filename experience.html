@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precious Ojogu — Experience</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #ffffff; --surface: #f5f5f5; --border: #e0e0e0;
+      --text: #111111; --muted: #555555;
+      --link: #111111; --link-hover: #555555;
+      --font-mono: 'Courier New', Courier, monospace;
+      --font-serif: Georgia, 'Times New Roman', serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e0e0e; --surface: #1a1a1a; --border: #2e2e2e;
+        --text: #e8e8e8; --muted: #888888;
+        --link: #e8e8e8; --link-hover: #aaaaaa;
+      }
+    }
+    html { font-size: 16px; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: var(--font-serif); line-height: 1.75;
+      max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 5rem;
+    }
+    h1 { font-size: 1.5rem; font-weight: normal; letter-spacing: -0.02em; }
+    h2 { font-size: 0.8rem; font-weight: normal; text-transform: uppercase;
+         letter-spacing: 0.14em; color: var(--muted); margin: 3rem 0 1.25rem; }
+    h3 { font-size: 1rem; font-weight: bold; margin: 0 0 0.2rem; }
+    p  { margin-bottom: 0.9rem; }
+    a  { color: var(--link); text-decoration: underline;
+         text-decoration-color: var(--border); text-underline-offset: 3px; }
+    a:hover { color: var(--link-hover); text-decoration-color: var(--muted); }
+    abbr { text-decoration: underline dotted; cursor: help; }
+    em   { font-style: italic; color: var(--muted); }
+    strong { font-weight: bold; }
+
+    header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; }
+    header h1 { margin-bottom: 0.2rem; }
+    header .title { font-size: 0.875rem; color: var(--muted); margin-bottom: 0.6rem; }
+    header address {
+      font-style: normal; font-size: 0.8125rem; color: var(--muted);
+      font-family: var(--font-mono); margin-bottom: 0.5rem;
+    }
+    header address a { color: var(--muted); }
+    header .resume-link { font-size: 0.8125rem; font-family: var(--font-mono); }
+
+    nav { border-bottom: 1px solid var(--border); padding: 0.75rem 0; }
+    nav ul { list-style: none; display: flex; gap: 1.75rem; flex-wrap: wrap; }
+    nav a  { font-family: var(--font-mono); font-size: 0.8rem; text-decoration: none;
+             color: var(--muted); letter-spacing: 0.04em; }
+    nav a:hover, nav a[aria-current="page"] { color: var(--text); }
+    nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 3px; }
+
+    main { margin-top: 3rem; }
+    section + section { margin-top: 3rem; }
+
+    article {
+      border-top: 1px solid var(--border);
+      padding-top: 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+    article:first-of-type { border-top: none; padding-top: 0; }
+
+    .entry-meta {
+      font-family: var(--font-mono); font-size: 0.75rem;
+      color: var(--muted); margin-bottom: 0.75rem;
+      text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .entry-type {
+      font-family: var(--font-mono); font-size: 0.75rem;
+      color: var(--muted); text-transform: uppercase;
+      letter-spacing: 0.06em; margin-bottom: 0.2rem;
+    }
+    .entry-links {
+      font-family: var(--font-mono); font-size: 0.8125rem;
+      margin-top: 1rem;
+    }
+    .entry-links a { margin-right: 1.25rem; }
+
+    ul { padding-left: 1.25rem; margin-bottom: 0.9rem; }
+    li { margin-bottom: 0.3rem; font-size: 0.9375rem; }
+
+    .stack {
+      font-family: var(--font-mono); font-size: 0.8rem;
+      color: var(--muted); margin-top: 0.75rem;
+      border-top: 1px solid var(--border); padding-top: 0.75rem;
+    }
+
+    footer {
+      margin-top: 5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Precious Ojogu</h1>
+    <p class="title">Software Engineer (Backend)</p>
+    <address>
+      <a href="mailto:nkangprecious26@gmail.com">Email</a> &nbsp;&middot;&nbsp;
+      <a href="https://github.com/ojogu" rel="noopener" target="_blank">GitHub</a> &nbsp;&middot;&nbsp;
+      <a href="https://www.linkedin.com/in/precious-ojogu-a2118922a" rel="noopener" target="_blank">LinkedIn</a> &nbsp;&middot;&nbsp;
+      <a href="https://x.com/_Ojogu" rel="noopener" target="_blank">X</a>
+    </address>
+    <p class="resume-link"><a href="assets/precious-ojogu-resume.pdf" download>Download Resume / CV &darr;</a></p>
+  </header>
+
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html" aria-current="page">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- FOUNDER -->
+    <section aria-labelledby="founder-heading">
+      <h2 id="founder-heading">Founder</h2>
+
+      <article aria-labelledby="savestack-heading">
+        <p class="entry-type">Founder &amp; Backend Engineer</p>
+        <h3 id="savestack-heading">SaveStack</h3>
+        <p class="entry-meta"><time datetime="2026-04-21">21/4/2026</time> &ndash; Present</p>
+        <p>16 users · 3,200+ bookmarks synced (still growing)</p>
+        <p>X/Twitter's bookmark system buries your saved posts with no way to organize, search, or find them again. SaveStack syncs your bookmarks into a personal library you can actually use — with folders, tags, full-text search, and read tracking — updated automatically in the background.</p>
+        <ul>
+          <li>Find any saved post instantly through full-text search across content and author names</li>
+          <li>Organize bookmarks into folders and tags instead of scrolling endlessly</li>
+          <li>Read/unread tracking keeps your attention on what's new</li>
+          <li>Library stays current automatically — no manual refresh needed</li>
+          <li>Two-mode sync architecture (fresh + historical workers) — API never blocks user</li>
+          <li>Production: VPS, Nginx, Certbot TLS, Cloudflare DNS, OpenTelemetry → Grafana</li>
+        </ul>
+        <p class="stack">Tech: Python · FastAPI · Celery · RabbitMQ · Redis · PostgreSQL · React · Docker · Nginx · OpenTelemetry · Grafana</p>
+        <p class="entry-links">
+          <a href="https://github.com/ojogu/savestack" rel="noopener" target="_blank">GitHub &rarr;</a>
+          <a href="https://savestack.ojogulabs.xyz" rel="noopener" target="_blank">Live &rarr;</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- EMPLOYMENT -->
+    <section aria-labelledby="employment-heading">
+      <h2 id="employment-heading">Employment</h2>
+
+      <article aria-labelledby="qplus-heading">
+        <p class="entry-type">Backend Engineer</p>
+        <h3 id="qplus-heading">Qplus Global Nig. Ltd.</h3>
+        <p class="entry-meta">
+          <time datetime="2025-10">October 2025</time> &ndash; Present
+        </p>
+
+        <p>
+          Qplus Global is a software agency building enterprise and
+          <abbr title="Software as a Service">SaaS</abbr> products for institutional and
+          commercial clients. I work as a backend engineer across client projects, translating
+          complex operational workflows into reliable, scalable software.
+        </p>
+
+        <section aria-labelledby="clearance-heading">
+          <h3 id="clearance-heading">University Clearance Management System</h3>
+          <p class="entry-meta"><em>Codebase private</em></p>
+          <p>
+            A clearance management system handling 7,000+ student records across multi-role
+            workflows — students, departments, registry, and finance.
+          </p>
+          <ul>
+            <li>Architected multi-role workflows covering students, departments, registry,
+                and finance.</li>
+            <li>Implemented <abbr title="Role-Based Access Control">RBAC</abbr> and secure
+                authentication to protect sensitive academic data.</li>
+            <li>Improved query performance through indexing, pagination, and data access
+                optimisation.</li>
+            <li>Collaborated with non-technical stakeholders to translate university processes
+                into software workflows.</li>
+          </ul>
+          <p class="stack">
+            Stack: Python &middot; FastAPI &middot; PostgreSQL &middot; Redis &middot; Docker
+          </p>
+        </section>
+      </article>
+    </section>
+
+    <!-- CONTRACT -->
+    <section aria-labelledby="contract-heading">
+      <h2 id="contract-heading">Contract</h2>
+
+      <article aria-labelledby="irs-heading">
+        <p class="entry-type">Backend Engineer &mdash; Contract</p>
+        <h3 id="irs-heading">Institutional Repository System</h3>
+        <p class="entry-meta"><time datetime="2025-09">September 2025</time> &ndash; Present &nbsp;&middot;&nbsp; <em>Codebase private</em></p>
+
+        <p>
+          A secure, scalable platform for managing, storing, and retrieving academic publications,
+          theses, and research outputs for the University of Calabar. Supports automated document
+          ingestion, metadata extraction, and institutional submission and curation workflows.
+        </p>
+
+        <ul>
+          <li>Designed and built the backend architecture — secure storage, retrieval, and
+              management of academic publications.</li>
+          <li>Implemented <abbr title="Application Programming Interface">API</abbr>s for metadata
+              management, file uploads, authentication, and access control.</li>
+          <li>Developed automated ingestion pipelines with <abbr title="Optical Character Recognition">OCR</abbr>
+              and structured metadata extraction.</li>
+          <li>Optimised search, indexing, and background task processing — reducing downtime and
+              improving discovery speed.</li>
+        </ul>
+
+
+        <p class="stack">
+          Stack: Python &middot; FastAPI &middot; PostgreSQL &middot; Redis &middot; Celery &middot;
+          Docker &middot; DSpace APIs
+        </p>
+      </article>
+
+      <article aria-labelledby="notification-heading">
+        <p class="entry-type">Backend Engineer &mdash; Contract</p>
+        <h3 id="notification-heading">Notification Management System</h3>
+        <p class="entry-meta"><time datetime="2025">2025</time> &nbsp;&middot;&nbsp; <em>Codebase private</em></p>
+
+        <p>
+          A multi-channel notification platform for universities — allowing students to register
+          courses and lecturers to manage alerts for classes, exams, and tests. Notifications
+          delivered via email, WhatsApp, and Google Calendar.
+        </p>
+
+        <ul>
+          <li>Built backend <abbr title="Application Programming Interface">API</abbr>s for course
+              registration, student enrollment, and lecturer notification management.</li>
+          <li>Implemented multi-channel delivery: email (<abbr title="Simple Mail Transfer Protocol">SMTP</abbr>),
+              WhatsApp (Meta <abbr title="Application Programming Interface">API</abbr>), and Google
+              Calendar (<abbr title="Open Authorization">OAuth</abbr> integration).</li>
+          <li>Built scheduling and alert pipelines for class updates and exam reminders with reliable
+              background task processing.</li>
+          <li>Ensured data consistency, access control, and efficient querying across large student
+              and course datasets.</li>
+        </ul>
+
+        <p class="stack">
+          Stack: Python &middot; FastAPI &middot; PostgreSQL &middot; Redis &middot; Docker &middot;
+          Meta WhatsApp API &middot; Google Calendar API &middot; SMTP
+        </p>
+      </article>
+    </section

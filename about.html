@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precious Ojogu — About</title>
+  <!-- title updated -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #ffffff; --surface: #f5f5f5; --border: #e0e0e0;
+      --text: #111111; --muted: #555555;
+      --link: #111111; --link-hover: #555555;
+      --font-mono: 'Courier New', Courier, monospace;
+      --font-serif: Georgia, 'Times New Roman', serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e0e0e; --surface: #1a1a1a; --border: #2e2e2e;
+        --text: #e8e8e8; --muted: #888888;
+        --link: #e8e8e8; --link-hover: #aaaaaa;
+      }
+    }
+    html { font-size: 16px; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: var(--font-serif); line-height: 1.75;
+      max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 5rem;
+    }
+    h1 { font-size: 1.5rem; font-weight: normal; letter-spacing: -0.02em; }
+    h2 { font-size: 0.8rem; font-weight: normal; text-transform: uppercase;
+         letter-spacing: 0.14em; color: var(--muted); margin: 3rem 0 1.25rem; }
+    h3 { font-size: 1rem; font-weight: bold; margin: 2rem 0 0.4rem; }
+    p  { margin-bottom: 0.9rem; }
+    a  { color: var(--link); text-decoration: underline;
+         text-decoration-color: var(--border); text-underline-offset: 3px; }
+    a:hover { color: var(--link-hover); text-decoration-color: var(--muted); }
+    abbr { text-decoration: underline dotted; cursor: help; }
+    em   { font-style: italic; color: var(--muted); }
+    strong { font-weight: bold; }
+
+    header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; }
+    header h1 { margin-bottom: 0.2rem; }
+    header .title { font-size: 0.875rem; color: var(--muted); margin-bottom: 0.6rem; }
+    header address {
+      font-style: normal; font-size: 0.8125rem; color: var(--muted);
+      font-family: var(--font-mono); margin-bottom: 0.5rem;
+    }
+    header address a { color: var(--muted); }
+    header .resume-link { font-size: 0.8125rem; font-family: var(--font-mono); }
+
+    nav { border-bottom: 1px solid var(--border); padding: 0.75rem 0; }
+    nav ul { list-style: none; display: flex; gap: 1.75rem; flex-wrap: wrap; }
+    nav a  { font-family: var(--font-mono); font-size: 0.8rem; text-decoration: none;
+             color: var(--muted); letter-spacing: 0.04em; }
+    nav a:hover, nav a[aria-current="page"] { color: var(--text); }
+    nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 3px; }
+
+    main { margin-top: 3rem; }
+    section + section { margin-top: 2.5rem; }
+    ul { padding-left: 1.25rem; margin-bottom: 0.9rem; }
+    li { margin-bottom: 0.3rem; font-size: 0.9375rem; }
+
+    footer {
+      margin-top: 5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Precious Ojogu</h1>
+    <p class="title">Software Engineer (Backend)</p>
+    <address>
+      <a href="mailto:nkangprecious26@gmail.com">Email</a> &nbsp;&middot;&nbsp;
+      <a href="https://github.com/ojogu" rel="noopener" target="_blank">GitHub</a> &nbsp;&middot;&nbsp;
+      <a href="https://www.linkedin.com/in/precious-ojogu-a2118922a" rel="noopener" target="_blank">LinkedIn</a> &nbsp;&middot;&nbsp;
+      <a href="https://x.com/_Ojogu" rel="noopener" target="_blank">X</a>
+    </address>
+    <p class="resume-link"><a href="assets/precious-ojogu-resume.pdf" download>Download Resume / CV &darr;</a></p>
+  </header>
+
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+
+      <p>
+        I am a software engineer and product thinker based in <strong>Lagos, Nigeria</strong>.
+        I build backend systems — but the reason I build them is always the product: the problem
+        it solves, the people it serves, and whether the infrastructure underneath can actually
+        support what the product promises.
+      </p>
+
+      <p>
+        I think naturally in systems. Not just technical ones — business systems, operational
+        workflows, the way a company scales or breaks under its own weight. That instinct runs
+        through everything I do, whether I am designing an <abbr title="Application Programming Interface">API</abbr>,
+        debugging a production failure, or thinking through how a product should behave two years
+        from now.
+      </p>
+
+      <p>
+        I have built products across fintech, edtech, and enterprise software — from founding and
+        shipping an open banking finance assistant to delivering contract systems for universities
+        managing thousands of students. The technical work and the product thinking happen at the
+        same time, not in sequence.
+      </p>
+
+      <p>
+        I also write on system design and distributed systems.
+      </p>
+      <!-- <p>
+        I am completing a <abbr title="Bachelor of Science">BSc</abbr> in Computer Science at the
+        <strong>University of Calabar</strong>. I also write on system design and distributed
+        systems, and run a protein distribution business in Calabar — where I developed early
+        instincts around operations, capital, and what it actually takes to keep something running.
+      </p> -->
+    </section>
+
+    <section aria-labelledby="product-heading">
+      <h2 id="product-heading">Product &amp; Business</h2>
+
+      <p>
+        I am drawn to companies and the mechanics of how they work — startups, operations,
+        how products find users, how early teams make decisions under uncertainty. Engineering
+        is how I contribute, but I am just as interested in the product layer: what gets built,
+        why, and whether it actually moves anything for the people using it.
+      </p>
+
+      <p>
+        Fintech is the space I find most compelling right now. Not just the products, but the
+        infrastructure underneath — payment rails, open banking, the trust and compliance layers
+        that make financial software hard to build well. I built ÈgòSmart in this space and
+        came away with a clear view of where the real friction lives.
+      </p>
+
+      <p>
+        Long-term I want to be close to where product decisions get made — whether that is
+        founding something, joining an early team, or working alongside operators and
+        <abbr title="Venture Capital">VC</abbr>s on the technical side of evaluating and
+        building products. I am equally comfortable talking architecture and talking strategy.
+      </p>
+    </section>
+
+    <section aria-labelledby="stack-heading">
+      <h2 id="stack-heading">Stack</h2>
+      <ul>
+        <li>Python — FastAPI, Flask, Celery</li>
+        <li>Redis, RabbitMQ</li>
+        <li>PostgreSQL, SQlite, MySQL, MongoDB</li>
+        <li>Docker, Nginx, Linux <abbr title="Virtual Private Server">VPS</abbr></li>
+        <li><abbr title="OpenTelemetry">OTel</abbr>, Prometheus, Grafana, Loki, Tempo</li>
+        <li>Git, GitHub Actions, CI/CD pipelines</li>
+      </ul>
+    </sectio

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precious Ojogu — Articles</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #ffffff; --surface: #f5f5f5; --border: #e0e0e0;
+      --text: #111111; --muted: #555555;
+      --link: #111111; --link-hover: #555555;
+      --font-mono: 'Courier New', Courier, monospace;
+      --font-serif: Georgia, 'Times New Roman', serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e0e0e; --surface: #1a1a1a; --border: #2e2e2e;
+        --text: #e8e8e8; --muted: #888888;
+        --link: #e8e8e8; --link-hover: #aaaaaa;
+      }
+    }
+    html { font-size: 16px; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: var(--font-serif); line-height: 1.75;
+      max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 5rem;
+    }
+    h1 { font-size: 1.5rem; font-weight: normal; letter-spacing: -0.02em; }
+    h2 { font-size: 0.8rem; font-weight: normal; text-transform: uppercase;
+         letter-spacing: 0.14em; color: var(--muted); margin: 3rem 0 1.25rem; }
+    h3 { font-size: 1rem; font-weight: bold; margin: 0 0 0.4rem; line-height: 1.4; }
+    p  { margin-bottom: 0.9rem; }
+    a  { color: var(--link); text-decoration: underline;
+         text-decoration-color: var(--border); text-underline-offset: 3px; }
+    a:hover { color: var(--link-hover); text-decoration-color: var(--muted); }
+    em   { font-style: italic; color: var(--muted); }
+
+    header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; }
+    header h1 { margin-bottom: 0.2rem; }
+    header .title { font-size: 0.875rem; color: var(--muted); margin-bottom: 0.6rem; }
+    header address {
+      font-style: normal; font-size: 0.8125rem; color: var(--muted);
+      font-family: var(--font-mono); margin-bottom: 0.5rem;
+    }
+    header address a { color: var(--muted); }
+    header .resume-link { font-size: 0.8125rem; font-family: var(--font-mono); }
+
+    nav { border-bottom: 1px solid var(--border); padding: 0.75rem 0; }
+    nav ul { list-style: none; display: flex; gap: 1.75rem; flex-wrap: wrap; }
+    nav a  { font-family: var(--font-mono); font-size: 0.8rem; text-decoration: none;
+             color: var(--muted); letter-spacing: 0.04em; }
+    nav a:hover, nav a[aria-current="page"] { color: var(--text); }
+    nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 3px; }
+
+    main { margin-top: 3rem; }
+    section + section { margin-top: 3rem; }
+
+    .medium-link {
+      font-family: var(--font-mono); font-size: 0.8125rem;
+      margin-bottom: 2rem; display: block;
+    }
+
+    article {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+    article:last-of-type { border-bottom: 1px solid var(--border); }
+
+    .article-summary {
+      font-size: 0.9375rem;
+      color: var(--muted);
+      margin: 0.3rem 0 0.75rem;
+      line-height: 1.6;
+    }
+    .read-link {
+      font-family: var(--font-mono); font-size: 0.8rem;
+      letter-spacing: 0.04em;
+    }
+
+    footer {
+      margin-top: 5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Precious Ojogu</h1>
+    <p class="title">Software Engineer (Backend)</p>
+    <address>
+      <a href="mailto:nkangprecious26@gmail.com">Email</a> &nbsp;&middot;&nbsp;
+      <a href="https://github.com/ojogu" rel="noopener" target="_blank">GitHub</a> &nbsp;&middot;&nbsp;
+      <a href="https://www.linkedin.com/in/precious-ojogu-a2118922a" rel="noopener" target="_blank">LinkedIn</a> &nbsp;&middot;&nbsp;
+      <a href="https://x.com/_Ojogu" rel="noopener" target="_blank">X</a>
+    </address>
+    <p class="resume-link"><a href="assets/precious-ojogu-resume.pdf" download>Download Resume / CV &darr;</a></p>
+  </header>
+
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="articles.html" aria-current="page">Articles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- TECHNICAL -->
+    <section aria-labelledby="technical-heading">
+      <h2 id="technical-heading">Technical Writing</h2>
+      <a class="medium-link" href="https://medium.com/@nkangprecious26" rel="noopener" target="_blank">All articles on Medium &rarr;</a>
+
+      <article aria-labelledby="art-sportybet">
+        <h3 id="art-sportybet">Sporty Bet Crashed. Here's Why.</h3>
+        <p class="article-summary">
+          A systems analysis of the SportyBet outage — examining likely failure modes,
+          the architectural decisions that made the system fragile under load, and what
+          high-traffic backend engineers should take from it.
+        </p>
+        <a class="read-link" href="https://medium.com/@nkangprecious26/sporty-bet-crashed-heres-why-314cecba7587" rel="noopener" target="_blank">Read &rarr;</a>
+      </article>
+
+      <article aria-labelledby="art-n-plus-one">
+        <h3 id="art-n-plus-one">Solving the N+1 Query Problem: From 30s to 1s</h3>
+        <p class="article-summary">
+          A hands-on walkthrough of diagnosing and fixing the N+1 query problem in a
+          production API — detection process, the fix, and the 30x response time improvement.
+        </p>
+        <a class="read-link" href="https://medium.com/@nkangprecious26/solving-the-n-1-query-problem-how-i-reduced-api-response-time-from-30s-to-1s-1fcd819c34e6" rel="noopener" target="_blank">Read &rarr;</a>
+      </article>
+
+      <article aria-labelledby="art-incremental-sync">
+        <h3 id="art-incremental-sync">Incremental Sync: Frontsync &amp; Backfill</h3>
+        <p class="article-summary">
+          Designing a two-mode sync architecture — frontsync for keeping recent data current,
+          backfill for recovering historical records — with application to the X API's
+          pagination and datetime filtering constraints.
+        </p>
+        <a class="read-link" href="https://medium.com/@nkangprecious26/incremental-sync-frontsync-backfill-24529c575854" rel="noopener" target="_blank">Read &rarr;</a>
+      </article>
+
+      <article aria-labelledby="art-messaging-patterns">
+        <h3 id="art-messaging-patterns">Messaging Patterns: The Core of Modern Distributed Infrastructure</h3>
+        <p class="article-summary">
+          An examination of the fundamental messaging patterns — point-to-point, pub/sub,
+          request/reply, fan-out — and how choosing the wrong one cascades into reliability
+          and scalability problems.
+        </p>
+        <a class="read-link" href="https://medium.com/@nkangprecious26/messaging-patterns-the-core-of-modern-distributed-infrastructure-bccb2ae518d8" rel="noopener" target="_blank">Read &rarr;</a>
+      </article>
+
+      <article aria-labelledby="art-webhooks">
+        <h3 id="art-webhooks">Handling Duplicate Webhooks in WhatsApp API Using Redis</h3>
+        <p class="article-summary">
+          Why the WhatsApp API sends duplicate webhook events and how to implement idempotent
+          deduplication using Redis — protecting downstream systems from processing the same
+          event twice.
+        </p>
+        <a class="read-link" href="https://medium.com/@nkangprecious26/handling-duplicate-webhooks-in-whatsapp-api-using-redis-d7d117731f95" rel="noopener" target="_blank">Read &rarr;</a>
+      </article>
+
+      <article aria-labelledby="art-toc">
+        <h3 id="art-toc">How to Implement Twitter (X) OAuth 2.0 with PKCE using FastAPI and Tweepy — A Complete Guide</h3>
+        <p class="article-summary">
+          Why Twitter's OAuth 2.0 with PKCE differs from standard OAuth flows and how to implement a secure, production-ready authorization system using FastAPI and Tweepy — from generating code challenges to exchanging tokens and protecting your callback endpoint.
+        </p>
+        <a class="read-link" href="https://medium.com/@nkangprecious26/table-of-contents-155038d8f0c3" rel="noopener" target="_blank">Read &rarr;</a>
+      </article>
+    </section>
+
+    <!-- THOUGHTS & PERSONAL ESSAYS -->
+    <section aria-labelledby="personal-heading">
+      <h2 id="personal-heading">Thoughts &amp; Personal Essays</h2>
+
+      <article aria-labelledby="art-housing">
+        <h3 id="art-housing">Why Nigeria's Housing Market Needs What Fintech Already Has</h3>
+        <p class="article-summary">
+          On the structural gaps in Nigeria's housing market — and why the transparency, access,
+          and trust infrastructure that transformed Nigerian fintech is exactly what real estate
+          needs next.
+        </p>
+        <a class="read-link" href="https://medium.com/@nkangprecious26/why-nigerias-housing-market-needs-what-fintech-already-has-017fe4acb859" rel="noopener" target="_blank">Read &rarr;</a>
+      </article>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2026">2026</time> Precious Ojogu &mdash; Lagos, Nigeria.</p>
+  </footer>
+
+</body>
+</html>
