@@ -4,95 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Precious Ojogu — Projects</title>
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #ffffff; --surface: #f5f5f5; --border: #e0e0e0;
-      --text: #111111; --muted: #555555;
-      --link: #111111; --link-hover: #555555;
-      --font-mono: 'Courier New', Courier, monospace;
-      --font-serif: Georgia, 'Times New Roman', serif;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0e0e0e; --surface: #1a1a1a; --border: #2e2e2e;
-        --text: #e8e8e8; --muted: #888888;
-        --link: #e8e8e8; --link-hover: #aaaaaa;
-      }
-    }
-    html { font-size: 16px; }
-    body {
-      background: var(--bg); color: var(--text);
-      font-family: var(--font-serif); line-height: 1.75;
-      max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 5rem;
-    }
-    h1 { font-size: 1.5rem; font-weight: normal; letter-spacing: -0.02em; }
-    h2 { font-size: 0.8rem; font-weight: normal; text-transform: uppercase;
-         letter-spacing: 0.14em; color: var(--muted); margin: 3rem 0 1.25rem; }
-    h3 { font-size: 1rem; font-weight: bold; margin: 0 0 0.2rem; }
-    p  { margin-bottom: 0.9rem; }
-    a  { color: var(--link); text-decoration: underline;
-         text-decoration-color: var(--border); text-underline-offset: 3px; }
-    a:hover { color: var(--link-hover); text-decoration-color: var(--muted); }
-    abbr { text-decoration: underline dotted; cursor: help; }
-    em   { font-style: italic; color: var(--muted); }
-    strong { font-weight: bold; }
-
-    header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; }
-    header h1 { margin-bottom: 0.2rem; }
-    header .title { font-size: 0.875rem; color: var(--muted); margin-bottom: 0.6rem; }
-    header address {
-      font-style: normal; font-size: 0.8125rem; color: var(--muted);
-      font-family: var(--font-mono); margin-bottom: 0.5rem;
-    }
-    header address a { color: var(--muted); }
-    header .resume-link { font-size: 0.8125rem; font-family: var(--font-mono); }
-
-    nav { border-bottom: 1px solid var(--border); padding: 0.75rem 0; }
-    nav ul { list-style: none; display: flex; gap: 1.75rem; flex-wrap: wrap; }
-    nav a  { font-family: var(--font-mono); font-size: 0.8rem; text-decoration: none;
-             color: var(--muted); letter-spacing: 0.04em; }
-    nav a:hover, nav a[aria-current="page"] { color: var(--text); }
-    nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 3px; }
-
-    main { margin-top: 3rem; }
-    section + section { margin-top: 3rem; }
-
-    article {
-      border-top: 1px solid var(--border);
-      padding-top: 1.75rem;
-      margin-bottom: 2.5rem;
-    }
-    article:first-of-type { border-top: none; padding-top: 0; }
-
-    .project-meta {
-      font-family: var(--font-mono); font-size: 0.75rem;
-      color: var(--muted); margin-bottom: 0.75rem;
-      text-transform: uppercase; letter-spacing: 0.06em;
-    }
-    .project-links {
-      font-family: var(--font-mono); font-size: 0.8125rem;
-      margin-top: 1rem;
-    }
-    .project-links a { margin-right: 1.25rem; }
-    .stack {
-      font-family: var(--font-mono); font-size: 0.8rem;
-      color: var(--muted); margin-top: 0.75rem;
-      border-top: 1px solid var(--border); padding-top: 0.75rem;
-    }
-    ul { padding-left: 1.25rem; margin-bottom: 0.9rem; }
-    li { margin-bottom: 0.3rem; font-size: 0.9375rem; }
-
-    footer {
-      margin-top: 5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
-      font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);
-    }
-  </style>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-projects">
 
-  <header>
+  <header class="site-header">
     <h1>Precious Ojogu</h1>
     <p class="title">Software Engineer (Backend)</p>
     <address>
@@ -104,10 +21,11 @@
     <p class="resume-link"><a href="assets/precious-ojogu-resume.pdf" download>Download Resume / CV &darr;</a></p>
   </header>
 
-  <nav aria-label="Primary navigation">
+  <nav class="site-nav" aria-label="Primary navigation">
     <ul>
       <li><a href="about.html">About</a></li>
       <li><a href="experience.html">Experience</a></li>
+      <li><a href="product.html">Product</a></li>
       <li><a href="projects.html" aria-current="page">Projects</a></li>
       <li><a href="skills.html">Skills</a></li>
       <li><a href="articles.html">Articles</a></li>
@@ -115,33 +33,32 @@
     </ul>
   </nav>
 
-  <main>
+  <main class="site-main">
 
-    <section aria-labelledby="active-heading">
-      <h2 id="active-heading">Active</h2>
+    <section aria-labelledby="selected-work-heading">
+      <h2 id="selected-work-heading">Selected work</h2>
 
-      <article aria-labelledby="gitai-heading">
-        <p class="project-meta">Developer tools &middot; AI &middot; CLI</p>
-        <h3 id="gitai-heading">gitAI</h3>
+      <article aria-labelledby="lexibot-heading">
+        <h3 id="lexibot-heading">Lexi Bot</h3>
         <p>
-          Writing meaningful commit messages is easy to skip and expensive to skip. gitAI analyzes your staged changes and generates a conventional commit message in seconds — accurate enough to confirm and move on, or regenerate if it misses.
+          Building vocabulary is hard to do consistently. Lexi lives in Telegram — no new app, no dictionary to open. Send a word, get a full breakdown: definition, pronunciation audio, usage examples, and common mistake flags. It remembers what you looked up and quizzes you on it the following week.
         </p>
         <ul>
-          <li>Generates structured commit messages from staged changes instantly</li>
-          <li>Supports retry and selection from multiple attempts without re-staging</li>
-          <li>Detects breaking changes and flags them before commit</li>
-          <li>Works with auto-commit and auto-push for fully automated pipelines</li>
+          <li>Instant word lookup with pronunciation audio delivered in the same message</li>
+          <li>Weekly quiz built from your own lookups that week — personalized, not generic</li>
+          <li>Compare similar words, fix spelling, or describe a word and let Lexi find it</li>
+          <li>Grammar lessons delivered after each quiz to keep learning going</li>
         </ul>
         <p class="stack">
-          Tech: Python &middot; litellm &middot; unidiff &middot; Rich
+          Tech: Python &middot; Telegram Bot API &middot; LiteLLM &middot; SQLite &middot; APScheduler &middot; ElevenLabs &middot; YarnGPT
         </p>
         <p class="project-links">
-          <a href="https://github.com/ojogu/gitai" rel="noopener" target="_blank">GitHub &rarr;</a>
+          <a href="https://t.me/uselexiBot" rel="noopener" target="_blank">Live &rarr;</a>
+          <a href="https://github.com/ojogu/lexi-bot" rel="noopener" target="_blank">GitHub &rarr;</a>
         </p>
       </article>
 
       <article aria-labelledby="tweetaudit-heading">
-        <p class="project-meta">AI &middot; CLI &middot; X/Twitter</p>
         <h3 id="tweetaudit-heading">Tweet Audit</h3>
         <p>
           Years of tweets accumulate faster than you can review them. Tweet Audit runs your full archive through AI, flags posts that violate platform guidelines or your personal brand standards, and hands you a prioritized deletion list — in minutes, not days.
@@ -160,85 +77,30 @@
         </p>
       </article>
 
-    </section>
-
-    <section aria-labelledby="development-heading">
-      <h2 id="development-heading">In Development</h2>
-
-      <article aria-labelledby="egosmart-heading">
-        <p class="project-meta">FinTech &middot; AI &middot; WhatsApp</p>
-        <h3 id="egosmart-heading">ÈgòSmart</h3>
+      <article aria-labelledby="gitai-heading">
+        <h3 id="gitai-heading">gitAI</h3>
         <p>
-          Most Nigerians manage money across multiple bank apps with no clear picture of where it's going. ÈgòSmart is a financial mentor that lives inside WhatsApp — the app already open on your phone. Chat to link your bank account, set budgets, track spending, and get insights that actually explain your money in plain language.
+          Writing meaningful commit messages is easy to skip and expensive to skip. gitAI analyzes your staged changes and generates a conventional commit message in seconds — accurate enough to confirm and move on, or regenerate if it misses.
         </p>
         <ul>
-          <li>Link any Nigerian bank account through a short WhatsApp conversation — no new app, no complex setup</li>
-          <li>Set budgets and get alerted before you overspend a category</li>
-          <li>Ask about your balance or recent transactions without opening a banking app</li>
-          <li>Get financial insights framed as stories, not spreadsheets</li>
+          <li>Generates structured commit messages from staged changes instantly</li>
+          <li>Supports retry and selection from multiple attempts without re-staging</li>
+          <li>Detects breaking changes and flags them before commit</li>
+          <li>Works with auto-commit and auto-push for fully automated pipelines</li>
         </ul>
         <p class="stack">
-          Tech: Python &middot; FastAPI &middot; PostgreSQL &middot; Redis &middot; Celery &middot; Docker &middot; Mono API &middot; Meta WhatsApp Business API &middot; Twilio
+          Tech: Python &middot; litellm &middot; unidiff &middot; Rich
         </p>
         <p class="project-links">
-          <a href="https://github.com/ojogu/EgoSmart" rel="noopener" target="_blank">GitHub &rarr;</a>
+          <a href="https://github.com/ojogu/gitai" rel="noopener" target="_blank">GitHub &rarr;</a>
         </p>
       </article>
 
-      <article aria-labelledby="mediaflow-heading">
-        <p class="project-meta">SaaS API &middot; Video processing &middot; NLP</p>
-        <h3 id="mediaflow-heading">MediaFlow API</h3>
-        <p>
-          A public <abbr title="Software as a Service">SaaS</abbr>
-          <abbr title="Application Programming Interface">API</abbr> for video downloading and
-          processing — built for developers who want to ship without managing
-          <abbr title="ffmpeg">ffmpeg</abbr> pipelines or platform-specific download quirks.
-          Accepts remote links or file uploads; exposes clean endpoints for downloading,
-          trimming, and joining video.
-        </p>
-        <ul>
-          <li>Download from major social media platforms via <abbr title="Uniform Resource Locator">URL</abbr></li>
-          <li>Timestamp extraction —
-              <q>download from 8:00 to 15:00</q></li>
-          <li>Cut, trim, and join multiple clips in a single request</li>
-          <li>Async job queue — long-running jobs handled non-blocking</li>
-          <li>Developer-facing: API keys, rate limiting, usage tracking</li>
-        </ul>
-        <p class="stack">
-          Stack: Python &middot; FastAPI &middot; Celery &middot;
-          <abbr title="Simple Storage Service compatible">S3-compatible</abbr> object storage
-        </p>
-        <p class="project-links"><em>GitHub &mdash; coming soon</em></p>
-      </article>
-
-      <article aria-labelledby="mediabot-heading">
-        <p class="project-meta">Telegram &middot; WhatsApp &middot; Conversational interface</p>
-        <h3 id="mediabot-heading">MediaBot</h3>
-        <p>
-          A Telegram and WhatsApp bot that turns natural language into video edits. Paste a link
-          or upload a file, describe what you want in plain text — the bot handles downloading,
-          trimming, and joining. No app switching, no manual editing. Powered by the MediaFlow
-          API pipeline.
-        </p>
-        <ul>
-          <li>Download videos from social platforms via link</li>
-          <li>Timestamp trimming via <abbr title="Natural Language Processing">NLP</abbr> —
-              <q>download from 8min to 15min</q></li>
-          <li>Cut and join multiple clips from links or uploads in one instruction</li>
-          <li>Telegram Bot <abbr title="Application Programming Interface">API</abbr> +
-              WhatsApp Business <abbr title="Application Programming Interface">API</abbr></li>
-        </ul>
-        <p class="stack">
-          Stack: Python &middot; FastAPI &middot; Celery &middot; Telegram Bot API &middot;
-          Meta WhatsApp Business API
-        </p>
-        <p class="project-links"><em>GitHub &mdash; coming soon</em></p>
-      </article>
     </section>
 
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>&copy; <time datetime="2026">2026</time> Precious Ojogu &mdash; Lagos, Nigeria.</p>
   </footer>
 

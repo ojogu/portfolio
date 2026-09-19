@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precious Ojogu — Product</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-product">
+
+  <header class="site-header">
+    <h1>Precious Ojogu</h1>
+    <p class="title">Software Engineer (Backend)</p>
+    <address>
+      <a href="mailto:nkangprecious26@gmail.com">Email</a> &nbsp;&middot;&nbsp;
+      <a href="https://github.com/ojogu" rel="noopener" target="_blank">GitHub</a> &nbsp;&middot;&nbsp;
+      <a href="https://www.linkedin.com/in/precious-ojogu-a2118922a" rel="noopener" target="_blank">LinkedIn</a> &nbsp;&middot;&nbsp;
+      <a href="https://x.com/_Ojogu" rel="noopener" target="_blank">X</a>
+    </address>
+    <p class="resume-link"><a href="assets/precious-ojogu-resume.pdf" download>Download Resume / CV &darr;</a></p>
+  </header>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="product.html" aria-current="page">Product</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="site-main">
+    <section aria-labelledby="selected-work-heading">
+      <h2 id="selected-work-heading">Selected product work</h2>
+
+      <article aria-labelledby="savestack-product-heading">
+        <h3 id="savestack-product-heading">SaveStack</h3>
+        <p>
+          SaveStack turns X/Twitter's flat, ever-growing bookmark list into a personal library you
+          can search, organize, and return to. Connect your account once and new bookmarks sync in
+          the background, so saved posts remain findable instead of disappearing after you scroll
+          past them.
+        </p>
+        <ul>
+          <li>Search every bookmark by post text or author and find it again in seconds</li>
+          <li>Organize a 3,200+ bookmark library with folders and tags that stay in place</li>
+          <li>Sort by date or name and track read/unread status for a reliable read-later trail</li>
+          <li>Keep new saves synchronized automatically without manual refreshes</li>
+        </ul>
+        <section class="proof-point" aria-labelledby="savestack-usage-heading">
+          <h4 id="savestack-usage-heading">Live usage</h4>
+          <dl class="metric-list">
+            <div>
+              <dt>Connected accounts</dt>
+              <dd>19</dd>
+            </div>
+            <div>
+              <dt>Synced bookmarks</dt>
+              <dd>3,200+</dd>
+            </div>
+            <div>
+              <dt>Largest library</dt>
+              <dd>1,461 bookmarks</dd>
+            </div>
+          </dl>
+          <p class="proof-note">Operated through multiple real-world outages with documented fixes.</p>
+        </section>
+        <p class="stack">Stack: Python · FastAPI · PostgreSQL · Celery · Redis · Docker · React · TypeScript</p>
+        <p class="entry-links">
+          <a href="https://github.com/ojogu/savestack" rel="noopener" target="_blank">GitHub &rarr;</a>
+          <a href="https://savestack.ojogulabs.xyz" rel="noopener" target="_blank">Live &rarr;</a>
+        </p>
+      </article>
+
+      <article aria-labelledby="flume-product-heading">
+        <h3 id="flume-product-heading">Flume</h3>
+        <p>
+          Flume removes the two biggest barriers to video processing: installing editing software
+          for individuals and maintaining a media pipeline for developers. Paste a social link or
+          upload a file, describe the edit in plain English, and receive the finished clip through
+          the web interface or API.
+        </p>
+
+        <section class="product-audience" aria-labelledby="flume-anyone-heading">
+          <h4 id="flume-anyone-heading">For anyone</h4>
+          <ul>
+            <li><strong>Edit in the browser</strong> — trim, compress, resize, watermark, convert
+                to GIF or audio, join clips, or download from social platforms.</li>
+            <li><strong>Start immediately</strong> — 5 jobs per month without signup or 20 with an
+                account.</li>
+            <li><strong>Understand failures</strong> — plain-language explanations and suggested
+                fixes replace raw processing-tool output.</li>
+          </ul>
+        </section>
+
+        <section class="product-audience" aria-labelledby="flume-developers-heading">
+          <h4 id="flume-developers-heading">For developers</h4>
+          <ul>
+            <li><strong>Simple integration</strong> — submit a job with <code>POST /job</code> using
+                a source URL and operation pipeline; retrieve results with <code>GET /job/{id}</code>
+                and receive completion webhooks automatically.</li>
+            <li><strong>13 composable operations</strong> — combine trim, compress, watermark, resize,
+                join, GIF conversion, audio extraction, thumbnails, and more in one JSON payload.</li>
+            <li><strong>Scoped access control</strong> — <code>flm_</code>-prefixed API keys with
+                SHA-256 hashing, secret-scanning-friendly design, presigned upload URLs, and
+                structured error codes.</li>
+          </ul>
+        </section>
+
+        <section class="proof-point" aria-labelledby="flume-usage-heading">
+          <h4 id="flume-usage-heading">Live usage</h4>
+          <dl class="metric-list">
+            <div>
+              <dt>Media jobs</dt>
+              <dd>113</dd>
+            </div>
+            <div>
+              <dt>Period</dt>
+              <dd>10 weeks</dd>
+            </div>
+            <div>
+              <dt>Users</dt>
+              <dd>10</dd>
+            </div>
+            <div>
+              <dt>API jobs</dt>
+              <dd>73</dd>
+            </div>
+            <div>
+              <dt>Web jobs</dt>
+              <dd>40</dd>
+            </div>
+            <div>
+              <dt>Completion notifications</dt>
+              <dd>487</dd>
+            </div>
+          </dl>
+        </section>
+        <p class="stack">
+          Stack: Python · FastAPI · PostgreSQL · Redis · RabbitMQ · FFmpeg · React · TypeScript ·
+          Cloudflare R2
+        </p>
+        <p class="entry-links">
+          <a href="https://flume.ojogulabs.xyz/web" rel="noopener" target="_blank">Web &rarr;</a>
+          <a href="https://flume.ojogulabs.xyz/api" rel="noopener" target="_blank">API &rarr;</a>
+          <a href="https://github.com/ojogu/flume" rel="noopener" target="_blank">GitHub &rarr;</a>
+        </p>
+      </article>
+
+      <article aria-labelledby="egosmart-product-heading">
+        <h3 id="egosmart-product-heading">ÈgòSmart</h3>
+        <p>
+          Most Nigerians manage money across multiple bank apps with no clear picture of where it's going. ÈgòSmart is a financial mentor that lives inside WhatsApp — the app already open on your phone. Chat to link your bank account, set budgets, track spending, and get insights that actually explain your money in plain language.
+        </p>
+        <ul>
+          <li>Link any Nigerian bank account through a short WhatsApp conversation — no new app, no complex setup</li>
+          <li>Set budgets and get alerted before you overspend a category</li>
+          <li>Ask about your balance or recent transactions without opening a banking app</li>
+          <li>Get financial insights framed as stories, not spreadsheets</li>
+        </ul>
+        <p class="stack">
+          Stack: Python &middot; FastAPI &middot; PostgreSQL &middot; Redis &middot; Celery &middot; Docker &middot; Mono API &middot; Meta WhatsApp Business API &middot; Twilio
+        </p>
+        <p class="entry-links">
+          <a href="https://github.com/ojogu/EgoSmart" rel="noopener" target="_blank">GitHub &rarr;</a>
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <time datetime="2026">2026</time> Precious Ojogu &mdash; Lagos, Nigeria.</p>
+  </footer>
+
+</body>
+</html>

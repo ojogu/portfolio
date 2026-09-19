@@ -4,90 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Precious Ojogu — Articles</title>
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg: #ffffff; --surface: #f5f5f5; --border: #e0e0e0;
-      --text: #111111; --muted: #555555;
-      --link: #111111; --link-hover: #555555;
-      --font-mono: 'Courier New', Courier, monospace;
-      --font-serif: Georgia, 'Times New Roman', serif;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0e0e0e; --surface: #1a1a1a; --border: #2e2e2e;
-        --text: #e8e8e8; --muted: #888888;
-        --link: #e8e8e8; --link-hover: #aaaaaa;
-      }
-    }
-    html { font-size: 16px; }
-    body {
-      background: var(--bg); color: var(--text);
-      font-family: var(--font-serif); line-height: 1.75;
-      max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 5rem;
-    }
-    h1 { font-size: 1.5rem; font-weight: normal; letter-spacing: -0.02em; }
-    h2 { font-size: 0.8rem; font-weight: normal; text-transform: uppercase;
-         letter-spacing: 0.14em; color: var(--muted); margin: 3rem 0 1.25rem; }
-    h3 { font-size: 1rem; font-weight: bold; margin: 0 0 0.4rem; line-height: 1.4; }
-    p  { margin-bottom: 0.9rem; }
-    a  { color: var(--link); text-decoration: underline;
-         text-decoration-color: var(--border); text-underline-offset: 3px; }
-    a:hover { color: var(--link-hover); text-decoration-color: var(--muted); }
-    em   { font-style: italic; color: var(--muted); }
-
-    header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; }
-    header h1 { margin-bottom: 0.2rem; }
-    header .title { font-size: 0.875rem; color: var(--muted); margin-bottom: 0.6rem; }
-    header address {
-      font-style: normal; font-size: 0.8125rem; color: var(--muted);
-      font-family: var(--font-mono); margin-bottom: 0.5rem;
-    }
-    header address a { color: var(--muted); }
-    header .resume-link { font-size: 0.8125rem; font-family: var(--font-mono); }
-
-    nav { border-bottom: 1px solid var(--border); padding: 0.75rem 0; }
-    nav ul { list-style: none; display: flex; gap: 1.75rem; flex-wrap: wrap; }
-    nav a  { font-family: var(--font-mono); font-size: 0.8rem; text-decoration: none;
-             color: var(--muted); letter-spacing: 0.04em; }
-    nav a:hover, nav a[aria-current="page"] { color: var(--text); }
-    nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 3px; }
-
-    main { margin-top: 3rem; }
-    section + section { margin-top: 3rem; }
-
-    .medium-link {
-      font-family: var(--font-mono); font-size: 0.8125rem;
-      margin-bottom: 2rem; display: block;
-    }
-
-    article {
-      border-top: 1px solid var(--border);
-      padding: 1.5rem 0;
-    }
-    article:last-of-type { border-bottom: 1px solid var(--border); }
-
-    .article-summary {
-      font-size: 0.9375rem;
-      color: var(--muted);
-      margin: 0.3rem 0 0.75rem;
-      line-height: 1.6;
-    }
-    .read-link {
-      font-family: var(--font-mono); font-size: 0.8rem;
-      letter-spacing: 0.04em;
-    }
-
-    footer {
-      margin-top: 5rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
-      font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);
-    }
-  </style>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page-articles">
 
-  <header>
+  <header class="site-header">
     <h1>Precious Ojogu</h1>
     <p class="title">Software Engineer (Backend)</p>
     <address>
@@ -99,10 +21,11 @@
     <p class="resume-link"><a href="assets/precious-ojogu-resume.pdf" download>Download Resume / CV &darr;</a></p>
   </header>
 
-  <nav aria-label="Primary navigation">
+  <nav class="site-nav" aria-label="Primary navigation">
     <ul>
       <li><a href="about.html">About</a></li>
       <li><a href="experience.html">Experience</a></li>
+      <li><a href="product.html">Product</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="skills.html">Skills</a></li>
       <li><a href="articles.html" aria-current="page">Articles</a></li>
@@ -110,9 +33,8 @@
     </ul>
   </nav>
 
-  <main>
+  <main class="site-main">
 
-    <!-- TECHNICAL -->
     <section aria-labelledby="technical-heading">
       <h2 id="technical-heading">Technical Writing</h2>
       <a class="medium-link" href="https://medium.com/@nkangprecious26" rel="noopener" target="_blank">All articles on Medium &rarr;</a>
@@ -175,7 +97,6 @@
       </article>
     </section>
 
-    <!-- THOUGHTS & PERSONAL ESSAYS -->
     <section aria-labelledby="personal-heading">
       <h2 id="personal-heading">Thoughts &amp; Personal Essays</h2>
 
@@ -192,7 +113,7 @@
 
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>&copy; <time datetime="2026">2026</time> Precious Ojogu &mdash; Lagos, Nigeria.</p>
   </footer>
 
